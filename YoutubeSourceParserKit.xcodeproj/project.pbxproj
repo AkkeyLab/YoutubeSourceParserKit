@@ -144,9 +144,11 @@
 				TargetAttributes = {
 					C3FC20CC1B4996150000E818 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 					};
 					C3FC20E11B4996150000E818 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 						TestTargetID = C3FC20CC1B4996150000E818;
 					};
 				};
@@ -312,6 +314,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dundaralp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = YoutubeSourceParserKit;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -325,6 +328,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dundaralp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = YoutubeSourceParserKit;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -341,6 +345,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dundaralp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = YoutubeSourceParserKit;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YoutubeSourceParserKit.app/YoutubeSourceParserKit";
 			};
 			name = Debug;
@@ -354,6 +359,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dundaralp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = YoutubeSourceParserKit;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YoutubeSourceParserKit.app/YoutubeSourceParserKit";
 			};
 			name = Release;
