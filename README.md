@@ -1,6 +1,5 @@
-# YoutubeSourceParserKit 
+# YoutubeSourceParserKit
 
-==================
 [![Build Status](https://img.shields.io/travis/movielala/YoutubeSourceParserKit/master.svg)](https://travis-ci.org/movielala/YoutubeSourceParserKit)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 [![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)](https://github.com/mobileplayer/mobileplayer-ios)
@@ -12,46 +11,40 @@
 
 YouTube Video Link Parser for Swift. Heavily inspried from hellozimi's repo [HCYoutubeParser](https://github.com/hellozimi/HCYoutubeParser)
 
-##Introduction
+## Introduction
 
 __Requires iOS 8 or later and Xcode 7.0+__<br/>
-Swift support uses dynamic frameworks and is therefore only supported on iOS > 8.
+Swift support uses dynamic frameworks and is therefore only supported on iOS 8.
 
-##Installation
+## Installation
 
 To install via CocoaPods add this line to your `Podfile`.
+
 ```
 use_frameworks!
-```
-and
-```
-pod 'YoutubeSourceParserKit'
+
+pod 'YoutubeSourceParserKit', :git => 'https://github.com/AkkeyLab/YoutubeSourceParserKit.git', :tag => '0.3.0'
 ```
 
-Then, run the following command:
+Then, run the following command: `$ pod install`
 
-```$ pod install```
-
-##Usage
+## Usage
 
 ```swift
 import YoutubeSourceParserKit
-```
 
-```swift
 let testURL = NSURL(string: "https://www.youtube.com/watch?v=swZJwZeMesk")!
-    Youtube.h264videosWithYoutubeURL(testURL) { (videoInfo, error) -> Void in
-      if let videoURLString = videoInfo?["url"] as? String,
-        videoTitle = videoInfo?["title"] as? String {
-          print("\(videoTitle)")
-          print("\(videoURLString)")
-      }
-    }
+Youtube.h264videosWithYoutubeURL(testURL) { (videoInfo, error) -> Void in
+  if let videoURLString = videoInfo?["url"] as? String,
+    videoTitle = videoInfo?["title"] as? String {
+      print("\(videoTitle)")
+      print("\(videoURLString)")
+  }
+}
 ```
 
-```
-videoInfo output:
-```
+`videoInfo` output:
+
 ```json
 {
     "title": "[Video Title]",
@@ -63,9 +56,7 @@ videoInfo output:
 }
 ```
 
-##MPMoviePlayerController Usage
-
-![alt tag](http://s10.postimg.org/5j1mristl/i_OS_Simulator_Screen_Shot_Jul_12_2015_14_33_02.png)
+## MPMoviePlayerController Usage
 
 ```swift
 import UIKit
@@ -96,5 +87,6 @@ class ViewController: UIViewController {
   }
 }
 ```
-Warning:
-This repo is for educational purposes.  This is not approved by the ToC of YouTube. Use at own risk. 
+
+Warning:  
+*This repo is for educational purposes.  This is not approved by the ToC of YouTube. Use at own risk.*
